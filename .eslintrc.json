@@ -1,0 +1,31 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "type": "module",
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended", 
+      "plugin:react-hooks/recommended",
+      "eslint-config-airbnb"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": ["react", "react-hooks"],
+    "rules": {
+      //add customize rules here as per your project's needs
+      "linebreak-style": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "max-len": "off",
+      "no-param-reassign": "off",
+      "react/prop-types": "off",
+      "jsx-a11y/no-noninteractive-element-interactions": "off",
+      "import/extensions": ["never"]
+    }
+}  
