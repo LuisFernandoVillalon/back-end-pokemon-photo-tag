@@ -7,7 +7,7 @@
     "start": "node main.js",
     "server": "node main.js",
     "client": "npm start --prefix back-end-pokemon-photo-tag",
-    "dev": "concurrently \"npm run server\" \"npm run back-end-pokemon-photo-tag\""
+    "dev": "npm run server"
   },
   "author": "",
   "type": "module",
@@ -19,5 +19,8 @@
     "express-validator": "^7.0.1",
     "express.js": "^1.0.0",
     "mongoose": "^8.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
